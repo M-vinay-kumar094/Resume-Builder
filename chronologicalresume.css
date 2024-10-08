@@ -1,0 +1,231 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 8px;
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+}
+.navbar .container {
+    width: 100%;
+    padding: 50px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    font-family: var(--font-poppins);
+}
+
+.navbar-brand-text {
+    
+    color: var(--clr-dark);
+    font-weight: 600;
+}
+
+.navbar-brand-text span {
+    color: var(--clr-blue);
+}
+
+.navbar-brand-icon {
+    width: 50px;
+    margin-right: 6px;
+    opacity: 0.8;
+}
+
+.brand-and-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 1rem; /* Space between buttons */
+}
+
+.btn-navbar {
+    padding: 0.8rem 1rem; /* Button padding */
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-blue);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-navbar:hover {
+    background-color: transparent;
+    color: var(--clr-dark);
+    border-color: var(--clr-grey);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+    background-color: #f4f4f4;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header {
+    padding: 20px;
+    text-align: left;
+    background-color:#374457;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.resume-header-content h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+#profile-job-title{
+    font-size: 20px;
+    color:#2A8484;
+}
+#profile-about{
+    color: white;
+    font-size: 12px;
+}
+
+.contact-info {
+    text-align: center;
+    background-color: #29343D;
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    
+}
+
+.contact-info p{
+    display: inline;
+    padding:40px;
+}
+
+.main-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 15px;
+}
+
+.main-content-left{
+    width: 40%;
+    height: 100%;
+    margin-right: 10%;
+    
+}
+.main-content-right{
+    width: 50%;
+    height: 100%;
+    
+}
+.main-content h4{
+    font-family:var(--font-manrope);
+    text-decoration: underline;
+    color: #2A8484;
+    text-underline-offset: 3px;
+}
+
+#expertise-list , #skill-list , #projects-list , #education-list , #work-experience-list , #interest-list{
+    padding: 15px;
+}
+.eitem{
+    
+    display: inline-block;
+    background-color:#13BBAF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+
+
+button{
+    
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-blue);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    padding: 20px;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: transparent;
+    color: var(--clr-dark);
+    border-color: var(--clr-grey);
+}
+
+
+
+:root{
+    --clr-blue: #1A91F0;
+    --clr-blue-mid: #1170CD;
+    --clr-blue-dark: #1A1C6A;
+    --clr-white: #fff;
+    --clr-bright: #EFF2F9;
+    --clr-dark: #1e2532;
+    --clr-black: #000;
+    --clr-grey: #656e83;
+    --clr-green: #084C41;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-manrope: 'Manrope', sans-serif;;
+    --transition: all 300ms ease-in-out;
+}
+
+
+/* footer */
+.footer{
+    margin-top: 10px;
+    padding: 1rem 0;
+    background-color: var(--clr-dark);
+}
+.footer-content p{
+    color: var(--clr-grey);
+}
+.footer-content p span{
+    color: var(--clr-white);
+}
+.text-center {
+    text-align: center;
+}
+.fs-15 {
+    font-size: 15px;
+}
+
+/* to hide the navbar and footer while printing*/
+@media print {
+    .navbar, .footer, .print-btn-container {
+        display: none; /* Hide navbar, footer, and print button */
+    }
+    
+    .container2 {
+        margin: 0; /* Remove margin for print */
+        box-shadow: none; /* Remove shadow for print */
+    }
+}
+
+/*end of resume style*
