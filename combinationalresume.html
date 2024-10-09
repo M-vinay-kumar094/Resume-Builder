@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="combinationalresume.css"> <!-- Link your CSS if needed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="combinationalresume.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="print-btn-container non-printable">
+            <nav class="navbar bg-white">
+                <div class="container">
+                    <div class="navbar-content">
+                        <div class="brand-and-toggler">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="img0.png" alt="" class="navbar-brand-icon">
+                                <span class="navbar-brand-text">Resume <span>Builder.</span></span>
+                            </a>
+                            <div class="navbar-buttons">
+                                <a href="intro.html" class="btn btn-navbar">Home</a>
+                                <a href="format.html" class="btn btn-navbar">Formats</a>
+                            </div>
+                    </div>
+                </div>
+        </nav>
+        </div>
+    </header>
+    <div class="resume-container">
+        <div class="resume-header">
+            <div>
+                <h1 id="profile-name"></h1>
+                <h2 id="profile-job-title"></h2>
+                <p id="profile-about"></p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="set">
+                <div class="left"><i class="fas fa-envelope" id="icon"></i><p id="contact-mail"></p></div>
+                <div class="right"><i class="fas fa-phone-alt" id="icon"></i><p id="contact-mobile"></p></div>
+            </div>
+            <div class="set">
+                <div class="left"><i class="fas fa-map-marker-alt" id="icon"></i><p id="contact-address"></p></div>
+                <div class="right"><i class="fas fa-globe icon" id="icon"></i><p id="contact-website"></p></div>
+            </div>
+            <div class="set">
+                <div class="left"><i class="fab fa-linkedin icon" id="icon"></i><p id="contact-linkedin"></p></div>
+                <div class="right"><i class="fab fa-twitter icon" id="icon"></i><p id="contact-twitter"></p></div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+        
+                <h2>Skills</h2>
+                <div id="skill-list"></div>
+            
+        
+                <h2>Projects</h2>
+                <div id="projects-list"></div>
+            
+        
+                <h2>Work Experience</h2>
+                <div id="work-experience-list"></div>
+            
+        </div>
+    </div>
+    
+    
+    
+    <button id="printButton" onclick="printCV()">Print</button>
+
+
+    <div class="print-btn-container non-printable">
+        <footer class="footer bg-dark">
+            <div class="container">
+                <div class="footer-content text-center">
+                    <p class="fs-15">&copy;Copyright 2022. All Rights Reserved - <span>build.resume</span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
