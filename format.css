@@ -75,6 +75,9 @@ a {
     padding: 0;
     box-sizing: border-box;
 }
+.scroll-text{
+    color: var(--clr-blue);
+}
 
 body {
     font-family: Arial, sans-serif;
